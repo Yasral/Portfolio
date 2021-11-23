@@ -4,8 +4,121 @@
 
 body{
     font-family: 'Roboto', sans-serif;
+    background-color: #F5F0E1;
 }
 
-h1, h2, h3, h4, h5, h6{
+h1, h2, h3, h4, h5, h6, button{
     font-family: 'Raleway', sans-serif;
+}
+
+/* Styling the reusable parts */
+header, .my-speech{
+    margin: 0 0 0.3125rem 0;
+}
+
+/* Styling the header icons */
+.fas, .far, .fab{
+    font-size: 1.875rem;
+    color: #fff;
+}
+
+header{
+    background-color: #1E3D59;
+    box-shadow: 0 0 0.3125rem rgba(0, 0, 0, 0.25);
+    border-radius: 0.3125rem 0.3125rem 0 0;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28 255, 255, 255, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.navbar-toggler{
+    padding: 0.25rem;
+    background-color: #FF6E40;
+    border: 0.1875rem solid #eee;
+    border-radius: 0.625rem;
+}
+
+.navbar-nav {
+    align-items: center;
+}
+
+header li{
+    margin: 0.625rem;
+}
+
+.nav-link.active {
+    background-color: #FF6E40;
+    padding: 0.625rem;
+    border-radius: 0.3125rem;
+}
+
+/* Styling the banner section */
+
+.presentation{
+    text-align: center;
+}
+
+.presentation img{
+    max-width: 11.3125rem;
+    max-height: 11.8125;
+    border-radius: 5.65625rem;
+}
+
+.presentation h1{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.5625rem;
+    padding: 1.25rem 0;
+
+}
+
+.presentation h2{
+    font-size: 1.25rem;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.presentation span{
+    display: block;
+    max-width: 3.125rem;
+    border-top: 0.1875rem solid #FF6E40;
+    padding: 0 0 1.875rem 0;
+    position: relative;
+    left: 2.8125rem;
+}
+
+.description, .presentation{
+    background: #F5F0E1;
+    box-shadow: 0 0 0.3125rem rgba(0, 0, 0, 0.25);
+    border-radius: 0 0 0.3125rem 0.3125rem;
+    padding: 0.625rem;
+}
+
+.description p{
+    font-weight: 300;
+    font-size: 1.125rem;
+}
+
+.description button{
+    max-width: 9.375rem;
+    max-height: 3.125rem;
+    background-color: #FF6E40;
+    border: none;
+    font-size: 1.5625rem;
+    box-shadow: 0 0 0.3125rem rgba(0, 0, 0, 0.25);
+    border-radius: 0.3125rem;
+    padding: 0.3125rem 1.25rem;
+    text-transform: uppercase;
+    color: #fff;
+    margin: 1.25rem 0 1.875rem 0;
+}
+
+.description div {
+    max-width: 10rem;
+    max-height: 3.125rem;
+}
+
+.description div .fab{
+    color: #0000FF;
 }
