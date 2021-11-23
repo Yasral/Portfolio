@@ -12,7 +12,7 @@ h1, h2, h3, h4, h5, h6, button{
 }
 
 /* Styling the reusable parts */
-header, .my-speech{
+header, .my-speech, .studies, .my-skills{
     margin: 0 0 0.3125rem 0;
 }
 
@@ -88,8 +88,11 @@ header li{
     left: 2.8125rem;
 }
 
-.description, .presentation{
+.description, .presentation, .formations{
     background: #F5F0E1;
+}
+
+.description, .presentation, .formations, .my-skills{
     box-shadow: 0 0 0.3125rem rgba(0, 0, 0, 0.25);
     border-radius: 0 0 0.3125rem 0.3125rem;
     padding: 0.625rem;
@@ -122,3 +125,52 @@ header li{
 .description div .fab{
     color: #0000FF;
 }
+
+/* Main content beginning */
+
+/* Formations content */
+.formations h2{
+    text-transform: uppercase;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.5625rem;
+    padding-bottom: 1.25rem;
+}
+
+.formations .fas{
+    color: #1E3D59;
+    /* font-size: 1.5625rem; */
+    font-size: 1.25rem;
+    padding: 0.625rem 0.3125rem;
+    background-color: #FFC13B;
+    border-radius: 50%;
+}
+
+.formation-cards-body{
+    background-color: #FFC13B;
+    box-shadow: 0 0 0.3125rem rgba(0, 0, 0, 0.25);
+    border-radius: 0.3125rem;
+    padding: 0.625rem 0.625rem 0 0.625rem;
+    max-width: 20.6875rem;
+    max-height: 6.25rem;
+    color: #fff;
+    margin-bottom: 0.9375rem;
+}
+
+.formation-cards-body h3{
+    font-size: 1.25rem;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+.formation-cards-body ul li{
+    font-size: 1.125rem;
+    font-weight: normal;
+    text-transform: uppercase;
+    font-style: normal;
+}
+
+.my-skills{
+    background-color: #1E3D59;
+}
+/* Main content ending */
