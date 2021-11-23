@@ -12,8 +12,14 @@ h1, h2, h3, h4, h5, h6, button{
 }
 
 /* Styling the reusable parts */
-header, .my-speech, .studies, .my-skills{
+header, .my-speech, .studies, .skills{
     margin: 0 0 0.3125rem 0;
+}
+
+article h6, section h6{
+    display: none;
+    height: 0;
+    text-indent: -625rem;
 }
 
 /* Styling the header icons */
@@ -92,7 +98,7 @@ header li{
     background: #F5F0E1;
 }
 
-.description, .presentation, .formations, .my-skills{
+.description, .presentation, .formations, .skills{
     box-shadow: 0 0 0.3125rem rgba(0, 0, 0, 0.25);
     border-radius: 0 0 0.3125rem 0.3125rem;
     padding: 0.625rem;
@@ -170,7 +176,114 @@ header li{
     font-style: normal;
 }
 
-.my-skills{
+/* Skills content */
+
+.skills{
     background-color: #1E3D59;
 }
+
+.circular{
+    text-align: center;
+}
+
+.circular h4{
+    font-weight: 400;
+    font-size: 1rem;
+    color: #fff;
+    margin: 0.9375rem auto;
+}
+
+svg{
+    max-width: 9.375rem;
+}
+
+    svg circle {
+        fill: none;
+    }
+
+    svg .circle1 {
+        stroke-width: 0.625rem;
+        stroke-dashoffset: 0;
+        stroke: #eee;
+    }
+
+    svg .pink {
+        stroke: #FF6E40;
+        stroke-width: 0.625rem;
+        stroke-dasharray: 472;
+        stroke-dashoffset: 472;
+        animation: full 2s linear forwards;
+    }
+
+    svg .yellow {
+        stroke: #FFC13B;
+        stroke-width: 0.625rem;
+        stroke-dasharray: 472;
+        stroke-dashoffset: 472;
+        animation: full 2s linear forwards;
+    }
+
+     svg .green {
+        stroke: #3EB489;
+        stroke-width: 0.625rem;
+        stroke-dasharray: 472;
+        stroke-dashoffset: 472;
+        animation: full 2s linear forwards;
+    }
+
+    svg .max-full{
+        animation: maxfull 2s linear forwards;
+    }
+
+    svg .half-full{
+        animation: halffull 2s linear forwards;
+    }
+
+     svg .mini-full{
+        animation: minifull 2s linear forwards;
+    }
+
+     svg .min-full{
+        animation: minfull 2s linear forwards;
+    }
+
+     svg .min{
+        animation: min 2s linear forwards;
+    }
+
+    @keyframes full {
+        100% {
+            stroke-dashoffset: 100;
+        }
+    }
+
+    @keyframes maxfull {
+        100% {
+            stroke-dashoffset: 70;
+        }
+    }
+
+    @keyframes halffull {
+        100% {
+            stroke-dashoffset: 180;
+        }
+    }
+
+     @keyframes minifull {
+        100% {
+            stroke-dashoffset: 200;
+        }
+    }
+
+     @keyframes minfull {
+        100% {
+            stroke-dashoffset: 240;
+        }
+    }
+
+    @keyframes min {
+        100% {
+            stroke-dashoffset: 260;
+        }
+    }
 /* Main content ending */
