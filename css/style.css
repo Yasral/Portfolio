@@ -4,8 +4,567 @@
 
 body{
     font-family: 'Roboto', sans-serif;
+    background-color: #F5F0E1;
 }
 
-h1, h2, h3, h4, h5, h6{
+h1, h2, h3, h4, h5, h6, button{
     font-family: 'Raleway', sans-serif;
+}
+
+/* Global Styling ending */
+
+/* Styling the reusable parts */
+header, .my-speech, .studies, .skills, .my-quality, .experiences, .references, .center-of-interest{
+    margin: 0 0 0.3125rem 0;
+}
+
+article h6, section h6{
+    display: none;
+    height: 0;
+    text-indent: -625rem;
+}
+
+/* Reusable parts ends */
+
+/* Styling the header icons */
+.fas, .far, .fab{
+    font-size: 1.875rem;
+    color: #fff;
+}
+
+header{
+    background-color: #1E3D59;
+    box-shadow: 0 0 0.3125rem rgba(0, 0, 0, 0.25);
+    border-radius: 0.3125rem 0.3125rem 0 0;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28 255, 255, 255, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.navbar-toggler{
+    padding: 0.25rem;
+    background-color: #FF6E40;
+    border: 0.1875rem solid #eee;
+    border-radius: 0.625rem;
+}
+
+.navbar-nav {
+    align-items: center;
+}
+
+header li{
+    margin: 0.625rem;
+}
+
+.nav-link.active {
+    background-color: #FF6E40;
+    padding: 0.625rem;
+    border-radius: 0.3125rem;
+}
+
+/* Header section ending */
+
+/* Styling the banner section */
+
+.presentation{
+    text-align: center;
+}
+
+.presentation img{
+    max-width: 11.3125rem;
+    max-height: 11.8125;
+    border-radius: 5.65625rem;
+}
+
+.presentation h1{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.5625rem;
+    padding: 1.25rem 0;
+
+}
+
+.presentation h2{
+    font-size: 1.25rem;
+    font-weight: 300;
+    font-style: normal;
+    max-width: 21.875rem;
+    margin: 0 auto;
+}
+
+.presentation::after{
+    content: "";
+    display: block;
+    max-width: 3.125rem;
+    border-top: 0.1875rem solid #FF6E40;
+    padding: 0 0 1.875rem 0;
+    position: relative;
+    left: 3.5rem;
+}
+
+.vertical-nav{
+    background-color: #1E3D59;
+    display: flex;
+    justify-content: center;
+}
+
+.vertical-nav ul{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+/* .presentation span{
+    display: block;
+    max-width: 3.125rem;
+    border-top: 0.1875rem solid #FF6E40;
+    padding: 0 0 1.875rem 0;
+    position: relative;
+    left: 3.75rem;
+} */
+
+.description, .presentation, .formations, .my-quality{
+    background: #F5F0E1;
+}
+
+.description, .presentation, .formations, .skills, .my-quality, .experiences, .references, .center-of-interest, .vertical-nav{
+    box-shadow: 0 0 0.3125rem rgba(0, 0, 0, 0.25);
+    border-radius: 0 0 0.3125rem 0.3125rem;
+    padding: 0.625rem;
+}
+
+.description p{
+    font-weight: 300;
+    font-size: 1.125rem;
+}
+
+.description button{
+    max-width: 9.375rem;
+    max-height: 3.125rem;
+    background-color: #FF6E40;
+    border: none;
+    font-size: 1.5625rem;
+    box-shadow: 0 0 0.3125rem rgba(0, 0, 0, 0.25);
+    border-radius: 0.3125rem;
+    padding: 0.3125rem 1.25rem;
+    text-transform: uppercase;
+    color: #fff;
+    margin: 1.25rem 0 1.875rem 0;
+}
+
+.description div {
+    max-width: 10rem;
+    max-height: 3.125rem;
+}
+
+.description div .fab{
+    color: #0000FF;
+}
+
+/* Main content beginning */
+
+/* Formations content beginning */
+.formations h2{
+    text-transform: uppercase;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.5625rem;
+    padding-bottom: 1.25rem;
+}
+
+.formations .fas{
+    color: #1E3D59;
+    font-size: 1.25rem;
+    padding: 0.625rem 0.3125rem;
+    background-color: #FFC13B;
+    border-radius: 50%;
+}
+
+.formation-cards-body{
+    background-color: #FFC13B;
+    box-shadow: 0 0 0.3125rem rgba(0, 0, 0, 0.25);
+    border-radius: 0.3125rem;
+    padding: 0.625rem 0.625rem 0 0.625rem;
+    max-width: 21.6875rem;
+    min-height: 6.25rem;
+    color: #fff;
+    margin-bottom: 0.9375rem;
+}
+
+.formation-cards-body h3{
+    font-size: 1.25rem;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+.formation-cards-body ul li{
+    font-size: 1.125rem;
+    font-weight: normal;
+    text-transform: uppercase;
+    font-style: normal;
+}
+
+/* Formation content ending */
+
+/* Skills content beginning */
+
+.skills{
+    background-color: #1E3D59;
+}
+
+.skills h2, .references h2, .experiences h2{
+    font-size: 1.5625rem;
+    font-weight: 600;
+    font-style: normal;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.circular{
+    text-align: center;
+}
+
+.circular h4{
+    font-weight: 400;
+    font-size: 1rem;
+    color: #fff;
+    margin: 0.9375rem auto;
+}
+
+svg{
+    max-width: 9.375rem;
+}
+
+    svg circle {
+        fill: none;
+    }
+
+    svg .circle1 {
+        stroke-width: 0.625rem;
+        stroke-dashoffset: 0;
+        stroke: #eee;
+    }
+
+    svg .pink {
+        stroke: #FF6E40;
+        stroke-width: 0.625rem;
+        stroke-dasharray: 472;
+        stroke-dashoffset: 472;
+        animation: full 2s linear forwards;
+    }
+
+    svg .yellow {
+        stroke: #FFC13B;
+        stroke-width: 0.625rem;
+        stroke-dasharray: 472;
+        stroke-dashoffset: 472;
+        animation: full 2s linear forwards;
+    }
+
+     svg .green {
+        stroke: #3EB489;
+        stroke-width: 0.625rem;
+        stroke-dasharray: 472;
+        stroke-dashoffset: 472;
+        animation: full 2s linear forwards;
+    }
+
+    svg .max-full{
+        animation: maxfull 2s linear forwards;
+    }
+
+    svg .half-full{
+        animation: halffull 2s linear forwards;
+    }
+
+     svg .mini-full{
+        animation: minifull 2s linear forwards;
+    }
+
+     svg .min-full{
+        animation: minfull 2s linear forwards;
+    }
+
+     svg .min{
+        animation: min 2s linear forwards;
+    }
+
+    @keyframes full {
+        100% {
+            stroke-dashoffset: 100;
+        }
+    }
+
+    @keyframes maxfull {
+        100% {
+            stroke-dashoffset: 70;
+        }
+    }
+
+    @keyframes halffull {
+        100% {
+            stroke-dashoffset: 180;
+        }
+    }
+
+     @keyframes minifull {
+        100% {
+            stroke-dashoffset: 200;
+        }
+    }
+
+     @keyframes minfull {
+        100% {
+            stroke-dashoffset: 240;
+        }
+    }
+
+    @keyframes min {
+        100% {
+            stroke-dashoffset: 260;
+        }
+    }
+
+/* Skills content ending */
+
+/* Personnal qualities */
+.my-quality h2{
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1.5625rem;
+}
+
+.qualite-group{
+    justify-content: center;
+}
+
+.validated h3{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.125rem;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.fa-check{
+    color: #10C20C;
+}
+/* Personnal qualities ending */
+
+/* Experience section */
+.experiences{
+    background-color: #FF6E40;
+}
+
+.experiences p{
+    font-size: 1.125rem;
+    color: #fff;
+    font-weight: normal;
+}
+
+.experiences p span{
+    font-weight: 600;
+}
+
+.experiences h3{
+    text-transform: uppercase;
+    color: #fff;
+    margin: 1.25rem 0;
+    font-size: 1.25rem;
+    font-weight: 400;
+}
+
+.project-card{
+    padding: 0.625rem;
+    text-align: center;
+    background-color: #F5F0E1;
+    border-radius: 0.3125rem;
+}
+.project-card img{
+    width: 100%;
+    filter: drop-shadow(0 0 0.3125rem rgba(0, 0, 0, 0.25));
+    border-radius: 0.3125rem;
+}
+
+.experiences .project-card + h3{
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+
+.project-card + h3 span{
+    display: inline-block;
+    padding-right: 0.3125rem;
+}
+
+.see-more a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 0.9375rem;
+    font-weight: normal;
+}
+
+.see-more section{
+    padding: 0 2.5rem;
+    text-align: end;
+    margin-bottom: 0.9375rem;
+}
+
+.btn-curriculum{
+    padding: 0 2.5rem;
+}
+
+.btn-curriculum button{
+    border: none;
+    background-color: #1E3D59;
+    padding: 0.3125rem;
+    box-shadow: 0 0 0.3125rem rgba(0, 0, 0, 0.25);
+    border-radius: 0.3125rem;
+    color: #fff;
+}
+
+.btn-curriculum button .fas{
+    font-size: 1.25rem;
+    color: #FFC13B;
+}
+/* Experience section ending */
+
+/* Reference section Beginning */
+.references{
+    background-color: #1E3D59;
+}
+
+.references h2{
+    padding: 1.25rem 0;
+}
+
+.references-cards{
+    margin-bottom: 1rem;
+}
+
+.references-cards-body{
+    background: #F5F0E1;
+    box-shadow: -0.25rem -0.25rem 7.0625rem rgba(0, 0, 0, 0.02), 0.25rem 0.25rem 2.9375rem rgba(0, 0, 0, 0.08);
+    border-radius: 0.6125rem;
+    width: 20rem;
+    height: 25rem;
+    /* text-align: center; */
+}
+
+.references-cards-body img{
+    width: 9.375rem;
+    height: 9.375rem;
+    border-radius: 50%;
+    margin:0 0 1rem 0;
+}
+
+.references-cards-body h3{
+    font-weight: 600;
+    font-size: 1.5625rem;
+    margin: 1rem 0;
+}
+
+.references-cards-body h4{
+    font-weight: 600;
+    font-size: 1.25rem;
+    color: #FF6E40;
+    margin: 0 0 1.5625rem 0;
+}
+
+.social-media .fab{
+    color: #0000FF;
+}
+
+.social-media{
+    width: 9.375rem;
+    margin-top: 1.875rem;
+}
+/* Reference section Ending */
+
+/* Center of interest Beginning */
+.center-of-interest{
+    background-color: #fff;
+}
+
+.center-of-interest h2{
+    font-size: 1.5625rem;
+    font-weight: 600;
+    font-style: normal;
+    color: #FF6E40;
+    text-transform: uppercase;
+    padding: 1rem 0;
+}
+
+.center-of-interest .fas, .center-of-interest h3{
+    color: #FF6E40;
+}
+
+.center-of-interest .fas{
+    font-size: 1.5rem;
+}
+
+.center-of-interest img{
+    color: #FF6E40;
+}
+
+.center-of-interest h3{
+    font-weight: normal;
+    font-size: 1.125rem;
+    text-transform: uppercase;
+}
+
+.center-of-interest div{
+    justify-content: center;
+}
+
+.center-of-interest svg{
+    fill: #FF6E40;
+    font-size: 1.5rem;
+}
+
+.center-of-interest h3 i, .center-of-interest h3 svg{
+    padding-right: 0.625rem;
+}
+
+/* Center of interest Ending */
+
+/* Main content ending */
+
+/* Adding some media queries */
+@media (max-width: 61.9375rem){
+    header{
+        display: block;
+    }
+
+    .vertical-nav{
+        display: none;
+    }
+}
+
+
+@media (min-width: 62rem){
+    header{
+        display: none;
+    }
+
+    .vertical-nav{
+        display: block;
+    }
+
+    .description p{
+        width: 28.125rem;
+        line-height: 2.25rem;
+    }
+
+    .description{
+        padding-left: 3.25rem;
+    }
+
+    .presentation::after{
+    left: 14.5rem;
+}
+
+    .presentation img{
+        padding-top: 5.75rem;
+    }
 }
