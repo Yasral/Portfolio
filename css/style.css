@@ -12,7 +12,7 @@ h1, h2, h3, h4, h5, h6, button{
 }
 
 /* Styling the reusable parts */
-header, .my-speech, .studies, .skills{
+header, .my-speech, .studies, .skills, .my-quality{
     margin: 0 0 0.3125rem 0;
 }
 
@@ -94,11 +94,11 @@ header li{
     left: 2.8125rem;
 }
 
-.description, .presentation, .formations{
+.description, .presentation, .formations, .my-quality{
     background: #F5F0E1;
 }
 
-.description, .presentation, .formations, .skills{
+.description, .presentation, .formations, .skills, .my-quality, .experiences{
     box-shadow: 0 0 0.3125rem rgba(0, 0, 0, 0.25);
     border-radius: 0 0 0.3125rem 0.3125rem;
     padding: 0.625rem;
@@ -157,8 +157,8 @@ header li{
     box-shadow: 0 0 0.3125rem rgba(0, 0, 0, 0.25);
     border-radius: 0.3125rem;
     padding: 0.625rem 0.625rem 0 0.625rem;
-    max-width: 20.6875rem;
-    max-height: 6.25rem;
+    max-width: 21.6875rem;
+    min-height: 6.25rem;
     color: #fff;
     margin-bottom: 0.9375rem;
 }
@@ -180,6 +180,14 @@ header li{
 
 .skills{
     background-color: #1E3D59;
+}
+
+.skills h2{
+    font-weight: 1.5625rem;
+    font-weight: 600;
+    font-style: normal;
+    color: #fff;
+    text-transform: uppercase;
 }
 
 .circular{
@@ -286,4 +294,81 @@ svg{
             stroke-dashoffset: 260;
         }
     }
+
+/* Personnal qualities */
+.my-quality h2{
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1.5625rem;
+}
+
+.validated h3{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.125rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    /* text-align: center; */
+}
+
+.fa-check{
+    color: #10C20C;
+}
+/* Personnal qualities ending */
+
+/* Experience section */
+.experiences{
+    background-color: #FF6E40;
+}
+
+.experiences p{
+    font-size: 1.125rem;
+    color: #fff;
+    font-weight: normal;
+}
+
+.experiences p span{
+    font-weight: 600;
+}
+
+.experiences h2{
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.5625rem;
+    text-transform: uppercase;
+}
+
+.experiences h3{
+    text-transform: uppercase;
+    color: #fff;
+    margin: 1.25rem 0;
+    font-size: 1.25rem;
+    font-weight: 400;
+}
+
+.project-card{
+    padding: 0.625rem;
+    text-align: center;
+    background-color: #F5F0E1;
+    border-radius: 0.3125rem;
+}
+.project-card img{
+    width: 100%;
+    filter: drop-shadow(0 0 0.3125rem rgba(0, 0, 0, 0.25));
+    border-radius: 0.3125rem;
+    /* max-width: 18.75rem;
+    height: 18.75rem; */
+}
+
+.experiences .project-card + h3{
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+
+.project-card + h3 span{
+    display: inline-block;
+    padding-right: 0.3125rem;
+}
+
+/* Experience section ending */
+
 /* Main content ending */
