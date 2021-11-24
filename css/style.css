@@ -369,6 +369,37 @@ svg{
     padding-right: 0.3125rem;
 }
 
+.see-more a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 0.9375rem;
+    font-weight: normal;
+}
+
+.see-more section{
+    padding: 0 2.5rem;
+    text-align: end;
+    margin-bottom: 0.9375rem;
+}
+
+.btn-curriculum{
+    padding: 0 2.5rem;
+}
+
+.btn-curriculum button{
+    border: none;
+    background-color: #1E3D59;
+    padding: 0.3125rem;
+    box-shadow: 0 0 0.3125rem rgba(0, 0, 0, 0.25);
+    border-radius: 0.3125rem;
+    color: #fff;
+}
+
+.btn-curriculum button .fas{
+    font-size: 1.25rem;
+    color: #FFC13B;
+}
+
 /* Experience section ending */
 
 /* Main content ending */
