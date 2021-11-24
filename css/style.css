@@ -11,6 +11,8 @@ h1, h2, h3, h4, h5, h6, button{
     font-family: 'Raleway', sans-serif;
 }
 
+/* Global Styling ending */
+
 /* Styling the reusable parts */
 header, .my-speech, .studies, .skills, .my-quality, .experiences, .references{
     margin: 0 0 0.3125rem 0;
@@ -21,6 +23,8 @@ article h6, section h6{
     height: 0;
     text-indent: -625rem;
 }
+
+/* Reusable parts ends */
 
 /* Styling the header icons */
 .fas, .far, .fab{
@@ -58,6 +62,8 @@ header li{
     padding: 0.625rem;
     border-radius: 0.3125rem;
 }
+
+/* Header section ending */
 
 /* Styling the banner section */
 
@@ -144,7 +150,7 @@ header li{
 
 /* Main content beginning */
 
-/* Formations content */
+/* Formations content beginning */
 .formations h2{
     text-transform: uppercase;
     font-style: normal;
@@ -155,7 +161,6 @@ header li{
 
 .formations .fas{
     color: #1E3D59;
-    /* font-size: 1.5625rem; */
     font-size: 1.25rem;
     padding: 0.625rem 0.3125rem;
     background-color: #FFC13B;
@@ -186,7 +191,9 @@ header li{
     font-style: normal;
 }
 
-/* Skills content */
+/* Formation content ending */
+
+/* Skills content beginning */
 
 .skills{
     background-color: #1E3D59;
@@ -305,6 +312,8 @@ svg{
         }
     }
 
+/* Skills content ending */
+
 /* Personnal qualities */
 .my-quality h2{
     text-transform: uppercase;
@@ -317,7 +326,6 @@ svg{
     font-size: 1.125rem;
     font-weight: 300;
     text-transform: uppercase;
-    /* text-align: center; */
 }
 
 .fa-check{
@@ -339,13 +347,6 @@ svg{
 .experiences p span{
     font-weight: 600;
 }
-
-/* .experiences h2{
-    color: #fff;
-    font-weight: 600;
-    font-size: 1.5625rem;
-    text-transform: uppercase;
-} */
 
 .experiences h3{
     text-transform: uppercase;
@@ -443,5 +444,9 @@ svg{
     margin: 0 0 1.5625rem 0;
 }
 /* Reference section Ending */
+
+/* Center of interest Beginning */
+
+/* Center of interest Ending */
 
 /* Main content ending */
