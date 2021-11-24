@@ -93,14 +93,14 @@ header li{
     margin: 0 auto;
 }
 
-.presentation::after{
+.presentation h2::after{
     content: "";
     display: block;
     max-width: 3.125rem;
     border-top: 0.1875rem solid #FF6E40;
     padding: 0 0 1.875rem 0;
     position: relative;
-    left: 3.5rem;
+    left: 2.1rem;
 }
 
 .vertical-nav{
