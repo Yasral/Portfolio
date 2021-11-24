@@ -14,7 +14,7 @@ h1, h2, h3, h4, h5, h6, button{
 /* Global Styling ending */
 
 /* Styling the reusable parts */
-header, .my-speech, .studies, .skills, .my-quality, .experiences, .references{
+header, .my-speech, .studies, .skills, .my-quality, .experiences, .references, .center-of-interest{
     margin: 0 0 0.3125rem 0;
 }
 
@@ -114,7 +114,7 @@ header li{
     background: #F5F0E1;
 }
 
-.description, .presentation, .formations, .skills, .my-quality, .experiences, .references{
+.description, .presentation, .formations, .skills, .my-quality, .experiences, .references, .center-of-interest{
     box-shadow: 0 0 0.3125rem rgba(0, 0, 0, 0.25);
     border-radius: 0 0 0.3125rem 0.3125rem;
     padding: 0.625rem;
@@ -321,6 +321,10 @@ svg{
     font-size: 1.5625rem;
 }
 
+.qualite-group{
+    justify-content: center;
+}
+
 .validated h3{
     font-family: 'Roboto', sans-serif;
     font-size: 1.125rem;
@@ -415,6 +419,14 @@ svg{
     background-color: #1E3D59;
 }
 
+.references h2{
+    padding: 1.25rem 0;
+}
+
+.references-cards{
+    margin-bottom: 1rem;
+}
+
 .references-cards-body{
     background: #F5F0E1;
     box-shadow: -0.25rem -0.25rem 7.0625rem rgba(0, 0, 0, 0.02), 0.25rem 0.25rem 2.9375rem rgba(0, 0, 0, 0.08);
@@ -434,7 +446,7 @@ svg{
 .references-cards-body h3{
     font-weight: 600;
     font-size: 1.5625rem;
-    margin: 0 0 0.75rem 0;
+    margin: 1rem 0;
 }
 
 .references-cards-body h4{
@@ -443,9 +455,62 @@ svg{
     color: #FF6E40;
     margin: 0 0 1.5625rem 0;
 }
+
+.social-media .fab{
+    color: #0000FF;
+}
+
+.social-media{
+    width: 9.375rem;
+    margin-top: 1.875rem;
+}
 /* Reference section Ending */
 
 /* Center of interest Beginning */
+.center-of-interest{
+    background-color: #fff;
+}
+
+.center-of-interest h2{
+    font-size: 1.5625rem;
+    font-weight: 600;
+    font-style: normal;
+    color: #FF6E40;
+    text-transform: uppercase;
+    padding: 1rem 0;
+}
+
+.center-of-interest .fas, .center-of-interest h3{
+    color: #FF6E40;
+}
+
+.center-of-interest .fas{
+    font-size: 1.5rem;
+}
+
+.center-of-interest img{
+    color: #FF6E40;
+}
+
+.center-of-interest h3{
+    font-weight: normal;
+    font-size: 1.125rem;
+    text-transform: uppercase;
+}
+
+.center-of-interest div{
+    justify-content: center;
+}
+
+.center-of-interest svg{
+    fill: #FF6E40;
+    font-size: 1.5rem;
+}
+
+.center-of-interest h3 i, .center-of-interest h3 svg{
+    padding-right: 0.625rem;
+}
+
 
 /* Center of interest Ending */
 
