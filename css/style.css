@@ -12,7 +12,7 @@ h1, h2, h3, h4, h5, h6, button{
 }
 
 /* Styling the reusable parts */
-header, .my-speech, .studies, .skills, .my-quality{
+header, .my-speech, .studies, .skills, .my-quality, .experiences, .references{
     margin: 0 0 0.3125rem 0;
 }
 
@@ -85,20 +85,30 @@ header li{
     font-style: normal;
 }
 
-.presentation span{
+.presentation::after{
+    content: "";
     display: block;
-    max-width: 3.125rem;
+     max-width: 3.125rem;
     border-top: 0.1875rem solid #FF6E40;
     padding: 0 0 1.875rem 0;
     position: relative;
     left: 2.8125rem;
 }
 
+/* .presentation span{
+    display: block;
+    max-width: 3.125rem;
+    border-top: 0.1875rem solid #FF6E40;
+    padding: 0 0 1.875rem 0;
+    position: relative;
+    left: 2.8125rem;
+} */
+
 .description, .presentation, .formations, .my-quality{
     background: #F5F0E1;
 }
 
-.description, .presentation, .formations, .skills, .my-quality, .experiences{
+.description, .presentation, .formations, .skills, .my-quality, .experiences, .references{
     box-shadow: 0 0 0.3125rem rgba(0, 0, 0, 0.25);
     border-radius: 0 0 0.3125rem 0.3125rem;
     padding: 0.625rem;
@@ -182,8 +192,8 @@ header li{
     background-color: #1E3D59;
 }
 
-.skills h2{
-    font-weight: 1.5625rem;
+.skills h2, .references h2, .experiences h2{
+    font-size: 1.5625rem;
     font-weight: 600;
     font-style: normal;
     color: #fff;
@@ -330,12 +340,12 @@ svg{
     font-weight: 600;
 }
 
-.experiences h2{
+/* .experiences h2{
     color: #fff;
     font-weight: 600;
     font-size: 1.5625rem;
     text-transform: uppercase;
-}
+} */
 
 .experiences h3{
     text-transform: uppercase;
@@ -355,8 +365,6 @@ svg{
     width: 100%;
     filter: drop-shadow(0 0 0.3125rem rgba(0, 0, 0, 0.25));
     border-radius: 0.3125rem;
-    /* max-width: 18.75rem;
-    height: 18.75rem; */
 }
 
 .experiences .project-card + h3{
@@ -399,7 +407,41 @@ svg{
     font-size: 1.25rem;
     color: #FFC13B;
 }
-
 /* Experience section ending */
+
+/* Reference section Beginning */
+.references{
+    background-color: #1E3D59;
+}
+
+.references-cards-body{
+    background: #F5F0E1;
+    box-shadow: -0.25rem -0.25rem 7.0625rem rgba(0, 0, 0, 0.02), 0.25rem 0.25rem 2.9375rem rgba(0, 0, 0, 0.08);
+    border-radius: 0.6125rem;
+    width: 20rem;
+    height: 25rem;
+    /* text-align: center; */
+}
+
+.references-cards-body img{
+    width: 9.375rem;
+    height: 9.375rem;
+    border-radius: 50%;
+    margin:0 0 1rem 0;
+}
+
+.references-cards-body h3{
+    font-weight: 600;
+    font-size: 1.5625rem;
+    margin: 0 0 0.75rem 0;
+}
+
+.references-cards-body h4{
+    font-weight: 600;
+    font-size: 1.25rem;
+    color: #FF6E40;
+    margin: 0 0 1.5625rem 0;
+}
+/* Reference section Ending */
 
 /* Main content ending */
