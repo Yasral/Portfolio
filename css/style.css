@@ -107,7 +107,18 @@ header li{
     background-color: #1E3D59;
     display: flex;
     justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 8.33333333%;;
+    height: 100%;
+    z-index: 1;
 }
+
+.mini-main{
+    margin-left: 8.33333333%;
+}
+
 
 .vertical-nav ul{
     height: 100%;
@@ -138,6 +149,7 @@ header li{
 .description p{
     font-weight: 300;
     font-size: 1.125rem;
+    letter-spacing: 0.19rem;
 }
 
 .description button{
@@ -539,6 +551,10 @@ svg{
     .vertical-nav{
         display: none;
     }
+
+    .mini-main{
+    margin-left: 0;
+}
 }
 
 
@@ -552,8 +568,10 @@ svg{
     }
 
     .description p{
-        width: 28.125rem;
+        max-width: 40.125rem;
         line-height: 2.25rem;
+        letter-spacing: 0.25rem;
+        /* text-align: justify; */
     }
 
     .description{
