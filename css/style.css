@@ -388,18 +388,19 @@ svg{
 }
 
 .project-card{
-    padding: 0.625rem;
-    text-align: center;
-    background-color: #F5F0E1;
+    max-width: 92%;
     border-radius: 0.3125rem;
+    padding: 0.625rem 0;
+    background-color: #F5F0E1;
+    text-align: center;
 }
+
 .project-card img{
-    width: 100%;
     filter: drop-shadow(0 0 0.3125rem rgba(0, 0, 0, 0.25));
     border-radius: 0.3125rem;
 }
 
-.experiences .project-card + h3{
+.project-card h3{
     font-weight: bold;
     font-size: 1.25rem;
 }
